@@ -75,13 +75,47 @@ body{
     color: #a58b72;
   }
 
-
+/* custom */
 
   .main-color-bg{
     background-color: #ff5921 !important;
     border-color: #ecf0f1 !important;
     color:white;
   }
+
+  /* header */
+
+  #header{
+      background: #333333;
+      color:white;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+  }
+
+  #header .create{
+      padding-top:20px;
+  }
+
+  /* Breadcrumb */
+
+  .breadcrumb{
+      background: #cccccc;
+      color: #333333;
+  }
+
+  .breadcrumb li{
+      color: #333333;
+  }
+
+  
+
+
+
+
+
+
+
+
   
   @media (max-width: 575px) {
     .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
