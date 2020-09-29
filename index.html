@@ -58,7 +58,7 @@
 						  Create Content
 						</button>
 						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						  <a class="dropdown-item"  type="button" data-toggle="modal" data-target="addPage">Add Page</a>
+						  <a class="dropdown-item"  type="button" data-toggle="modal" data-target="#addPage">Add Page</a>
 						  <a class="dropdown-item" href="#">Add Posts</a>
 						  <a class="dropdown-item" href="#">Add User</a>
 						</div>
@@ -174,6 +174,49 @@
 			 </div>
 		 </div>
 	 </section>
+
+
+	 <!-- Modals -->
+
+	 <!-- Add Page -->
+	 <div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			  <form action="">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLongTitle">Add Page</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+			  <div class="form-group">
+				  <label>Page Body:</label>
+				  <textarea name="editor1" class="form-control" cols="30" rows="10" placeholder="Page Body"></textarea>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox"> Published
+					</label>
+				</div>
+				<div class="form-group">
+					<label for="">Meta Tags</label>
+					<input type="text" class="form-control" placeholder="Add Some Tags...">
+				</div>
+				<div class="form-group">
+					<label>Meta Description</label>
+					<input type="text" class="form-control" placeholder="Add Meta Description...">
+				</div>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  <button type="submit" class="btn main-color-bg">Save changes</button>
+			</form>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
