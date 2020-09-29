@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
-<title>notitia</title>
+<title>Pages</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
 			  <a class="nav-link" href="index.html">Dashboard<span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link" href="pages.html">Pages</a>
+			  <a class="nav-link active" href="pages.html">Pages</a>
 			</li>
 			<li class="nav-item">
 			  <a class="nav-link" href="posts.html">Posts</a>
@@ -51,7 +51,7 @@
 		 <div class="container">
 			 <div class="row">
 				 <div class="col-md-10">
-					<h1 class="lead mt-4"> <img src="gear.svg" alt="gear"> Dashboard <small class="text-muted">Manage Your Site</small></h1>
+					<h1 class="lead mt-4"> <img src="gear.svg" alt="gear"> Pages <small class="text-muted">Manage Site Pages</small></h1>
 				 </div>
 				 <div class="col-md-2">
 					<div class="dropdown create">
@@ -71,8 +71,11 @@
 	 <section id="breadcrumb">
 		 <div class="container">
 			 <ol class="breadcrumb">
-				<li class="active">
-					Dashboard
+                <li>
+                    <a href="index.html">Dashboard </a>
+                </li>
+                <li class="active">
+					Pages
 				</li>
 
 			 </ol>
@@ -106,72 +109,50 @@
 				 <div class="col-md-9">
 					 <!-- Website Overview -->
 					<div class="card">
-						<h5 class="card-header main-color-bg">Website Overview</h5>
+						<h5 class="card-header main-color-bg">Pages</h5>
 						<div class="card-body">
-						<div class="list-inline row">
-							<div class="col-md-3">
-							<a class="list-inline-item text-dark dash-box">
-								<img src="images/001-user.svg" alt="user" width="18rem">
-								<span>203</span><h4>Users</h4>
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a class="list-inline-item text-dark dash-box">
-								<img src="my-icons-collection (1)/svg/001-document.svg" alt="user" width="18rem">
-								<span>12</span><h4>Pages</h4>
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a class="list-inline-item text-dark dash-box">
-								<img src="my-icons-collection (1)/svg/001-writing.svg" alt="user" width="18rem">
-								<span></span><h4>Posts</h4>
-							</a>
-						</div>
-						<div class="col-md-3">
-							<a class="list-inline-item text-dark dash-box">
-								<img src="my-icons-collection (1)/svg/002-statistics.svg" alt="user" width="18rem">
-								<span>11,356</span><h4>Visitors</h4>
-							</a>
-						</div>
-						</div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input class="form-control" type="text" placeholder="Filter Pages...">
+                                </div>
+                          </div>
+                          <br>
+                          <table class="table table-striped table-hover">
+                                <tr>
+                                  <th>Title</th>
+                                  <th>Published</th>
+                                  <th>Created</th>
+                                  <th></th>
+                                </tr>
+                                <tr>
+                                  <td>Home</td>
+                                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                                  <td>Dec 12, 2016</td>
+                                  <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                                </tr>
+                                <tr>
+                                  <td>About</td>
+                                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                                  <td>Dec 13, 2016</td>
+                                  <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                                </tr>
+                                <tr>
+                                  <td>Services</td>
+                                  <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                                  <td>Dec 13, 2016</td>
+                                  <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                                </tr>
+                                <tr>
+                                  <td>Contact</td>
+                                  <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                                  <td>Dec 14, 2016</td>
+                                  <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                                </tr>
+                              </table>
 					  </div>
 				 </div>
-				 <!-- Latest Users -->
-				 <div class="card">
-					<h5 class="card-header main-color-bg">Latest Users</h5>
-					<div class="card-body">
-						<table class="table table-striped table-hover">
-							<thead>
-							  <tr>
-								<th scope="col">#</th>
-								<th scope="col">First</th>
-								<th scope="col">Last</th>
-								<th scope="col">Handle</th>
-							  </tr>
-							</thead>
-							<tbody>
-							  <tr>
-								<th scope="row">1</th>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>@mdo</td>
-							  </tr>
-							  <tr>
-								<th scope="row">2</th>
-								<td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
-							  </tr>
-							  <tr>
-								<th scope="row">3</th>
-								<td>Larry</td>
-								<td>the Bird</td>
-								<td>@twitter</td>
-							  </tr>
-							</tbody>
-						  </table>
-				  </div>
-			 </div>
+			
+			
 			 </div>
 		 </div>
 	 </section>
