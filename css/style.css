@@ -20,7 +20,9 @@ body{
     background-color: #ff5921;
   }
   .navbar .navbar-brand {
+    font-size: 30px;
     color: #ecf0f1;
+    font-family: 'Ubuntu', sans-serif;
   }
   .navbar .navbar-brand:hover,
   .navbar .navbar-brand:focus {

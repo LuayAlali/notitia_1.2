@@ -20,29 +20,25 @@
 			<li class="nav-item ">
 			  <a class="nav-link" href="index.html">Dashboard<span class="sr-only">(current)</span></a>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item active">
 			  <a class="nav-link active" href="pages.html">Pages</a>
 			</li>
 			<li class="nav-item">
 			  <a class="nav-link" href="posts.html">Posts</a>
 			</li>
-			<li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Users
-			  </a>
-			  <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-				<a class="dropdown-item text-dark" href="#">Action</a>
-				<a class="dropdown-item text-dark" href="#">Another action</a>
-				<a class="dropdown-item text-dark" href="#">Something else here</a>
-			  </div>
-			</li>
+			<li class="nav-item">
+				<a class="nav-link " href="users.html">
+				  Users
+				</a>
+				
+			  </li>
 		  </ul>
 		  <ul class="navbar-nav ml-auto">
 			<li class="nav-item ">
 				<a class="nav-link" href="index.html">Welcome Luay<span class="sr-only">(current)</span></a>
 			  </li>
 			  <li class="nav-item ">
-				<a class="nav-link" href="index.html">Logout<span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="login.html">Logout<span class="sr-only">(current)</span></a>
 			  </li>
 			  </ul>
 		</div>
@@ -68,19 +64,7 @@
 		 </div>
 	 </header>
 
-	 <section id="breadcrumb">
-		 <div class="container">
-			 <ol class="breadcrumb">
-                <li>
-                    <a href="index.html">Dashboard </a>
-                </li>
-                <li class="active">
-					Pages
-				</li>
-
-			 </ol>
-		 </div>
-	 </section>
+	
 
 	 <section id="main">
 		 <div class="container">
@@ -91,12 +75,12 @@
 							<img src="gear.svg" alt="gear"> Dashboard
 						</a>
 						<a href="pages.html" class="list-group-item list-group-item-action">Pages <span class="badge badge-dark">12</span></a>
-						<a href="posts.html" class="list-group-item list-group-item-action">Posts<span class="badge badge-dark">33</span></a>
-						<a href="users.html" class="list-group-item list-group-item-action">Users<span class="badge badge-dark">122</span></a>
+						<a href="posts.html" class="list-group-item list-group-item-action">Posts <span class="badge badge-dark">33</span></a>
+						<a href="users.html" class="list-group-item list-group-item-action">Users <span class="badge badge-dark">122</span></a>
 						
 					  </div>
 					  
-						<h6 class="mt-2">Dish Space Used</h6>
+						<h6 class="mt-2">Disk Space Used</h6>
 						<div class="progress">
 							<div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
 						  </div>
@@ -114,6 +98,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <input class="form-control" type="text" placeholder="Filter Pages...">
+                                    <br>
                                 </div>
                           </div>
                           <br>
@@ -128,25 +113,25 @@
                                   <td>Home</td>
                                   <td><img src="images/001-tick.svg" alt="yes" width="14rem"></td>
                                   <td>Dec 12, 2016</td>
-                                  <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                                  <td><a class="btn btn-secondary" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
                                 </tr>
                                 <tr>
                                   <td>About</td>
                                   <td><img src="images/001-tick.svg" alt="yes" width="14rem"></span></td>
                                   <td>Dec 13, 2016</td>
-                                  <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                                  <td><a class="btn btn-secondary href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
                                 </tr>
                                 <tr>
                                   <td>Services</td>
                                   <td><img src="images/002-cancel.svg" alt="no" width="14rem"></td>
                                   <td>Dec 13, 2016</td>
-                                  <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                                  <td><a class="btn btn-secondary" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
                                 </tr>
                                 <tr>
                                   <td>Contact</td>
                                   <td><img src="images/001-tick.svg" alt="yes" width="14rem"></span></td>
                                   <td>Dec 14, 2016</td>
-                                  <td><a class="btn btn-default" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
+                                  <td><a class="btn btn-secondary" href="edit.html">Edit</a> <a class="btn btn-danger" href="#">Delete</a></td>
                                 </tr>
                               </table>
 					  </div>
@@ -174,6 +159,10 @@
 			  </button>
 			</div>
 			<div class="modal-body">
+				<div class="form-group">
+					<label>Page Title:</label>
+					<input type="text" class="form-control">
+				</div>
 			  <div class="form-group">
 				  <label>Page Body:</label>
 				  <textarea name="editor1" class="form-control" cols="30" rows="10" placeholder="Page Body"></textarea>
