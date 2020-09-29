@@ -98,18 +98,16 @@ body{
       padding-top:20px;
   }
 
-  /* Breadcrumb */
-
-  .breadcrumb{
-      background: #cccccc;
-      color: #333333;
-  }
-
-  .breadcrumb li{
-      color: #333333;
-  }
-
-
+/* side Dashboard */
+.list-dash-item{
+  display: grid;
+  grid-template-columns:  3fr 1fr;
+ 
+}
+.badge{
+  align-self: center;
+}
+.
   /* Progress Bars */
 
   .progress-bar{
