@@ -150,6 +150,29 @@ body{
       color: #a58b72;
       background-color: #ff5921;
     }
+
+     /* side dashboard */
+
+     .badge{
+       width:50%;
+     }
+    /* website Overview */
+    .web-overview .card-body .list-inline{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    
+    }
+    .web-overview .card-body .list-inline .col-md-3{
+      text-align: center;
+    }
+   
+    .table td, .table th {
+      padding: 0;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
   }
   
   @media (max-width: 767px) {
@@ -164,6 +187,25 @@ body{
       color: #a58b72;
       background-color: #ff5921;
     }
+
+     /* side dashboard */
+
+     .badge{
+      width:50%;
+    }
+
+    /* website Overview */
+    .web-overview .card-body .list-inline{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 20px;
+      
+      }
+      .web-overview .card-body .list-inline .col-md-3{
+        text-align: center;
+      }
+  
   }
   
   @media (max-width: 991px) {
