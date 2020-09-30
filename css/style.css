@@ -26,7 +26,7 @@ body{
   }
   .navbar .navbar-brand:hover,
   .navbar .navbar-brand:focus {
-    color: #a58b72;
+    cursor: default;
   }
   .navbar .navbar-text {
     color: #ecf0f1;
