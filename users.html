@@ -55,10 +55,10 @@
 						  Create Content
 						</button>
 						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						  <a class="dropdown-item"  type="button" data-toggle="modal" data-target="#addPage">Add Page</a>
-						  <a class="dropdown-item" href="#">Add Posts</a>
-						  <a class="dropdown-item" href="#">Add User</a>
-						</div>
+							<a class="dropdown-item" id="btn1" type="button" data-toggle="modal" data-target="#addPage">Add Page</a>
+							<a class="dropdown-item"  id="btn2" type="button" data-toggle="modal" data-target="#addPost">Add Posts</a>
+							<a class="dropdown-item"   id="btn3" type="button" data-toggle="modal" data-target="#addUser">Add User</a>
+						  </div>
 					  </div>
 				 </div>
 		 </div>
@@ -113,25 +113,25 @@
                               <td class="name">Jill Smith</td>
                               <td>jillsmith@gmail.com</td>
                               <td>Dec 12, 2016</td>
-                              <td><a class="btn btn-secondary mb-2 " href="edit.html">Edit</a> <a class="btn btn-danger delete" >Delete</a></td>
+                              <td><a class="btn btn-secondary mb-2 " href="edit-users.html">Edit</a> <a class="btn btn-danger delete" >Delete</a></td>
                             </tr>
                             <tr>
                               <td class="name">Eve Jackson</td>
                               <td>ejackson@yahoo.com</td>
                               <td>Dec 13, 2016</td>
-							   <td><a class="btn btn-secondary mb-2" href="edit.html">Edit</a> <a class="btn btn-danger delete" >Delete</a></td>
+							   <td><a class="btn btn-secondary mb-2" href="edit-users.html">Edit</a> <a class="btn btn-danger delete" >Delete</a></td>
                             </tr>
                             <tr>
                              <td class="name">Stephanie Landon</td>
                               <td>landon@yahoo.com</td>
                               <td>Dec 14, 2016</td>
-                              <td><a class="btn btn-secondary mb-2" href="edit.html">Edit</a> <a class="btn btn-danger delete" >Delete</a></td>
+                              <td><a class="btn btn-secondary mb-2" href="edit-users.html">Edit</a> <a class="btn btn-danger delete" >Delete</a></td>
                             </tr>
                             <tr>
 								<td class="name">Mike Johnson</td>
 								<td>mjohnson@gmail.com</td>
                               <td>Dec 15, 2016</td>
-                              <td><a class="btn btn-secondary mb-2" href="edit.html">Edit</a> <a class="btn btn-danger delete" >Delete</a></td>
+                              <td><a class="btn btn-secondary mb-2" href="edit-users.html">Edit</a> <a class="btn btn-danger delete" >Delete</a></td>
                             </tr>
                           </table>
 					  </div>
@@ -147,8 +147,8 @@
 	</footer>
 	 <!-- Modals -->
 
-	 <!-- Add Page -->
-	 <div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<!-- Add Page -->
+	<div class="modal fade page" id="addPage"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 		  <div class="modal-content">
 			  <form action="">
@@ -159,6 +159,10 @@
 			  </button>
 			</div>
 			<div class="modal-body">
+				<div class="form-group">
+					<label>Page Title:</label>
+					<input type="text" class="form-control">
+				</div>
 			  <div class="form-group">
 				  <label>Page Body:</label>
 				  <textarea name="editor1" class="form-control" cols="30" rows="10" placeholder="Page Body"></textarea>
@@ -184,11 +188,89 @@
 			</div>
 		  </div>
 		</div>
-	  </div>
+	</div>
+		
+		
+			 <!-- Add Post -->
+		 
+			 <div class="modal fade post" id="addPost"  role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+				  <div class="modal-content">
+					  <form >
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLongTitle">Add Post</h5>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>Post Title:</label>
+							<input type="text" class="form-control">
+						</div>
+					  <div class="form-group">
+						  <label>Post Body:</label>
+						  <textarea name="editor2" class="form-control" cols="30" rows="10" placeholder="Post Body"></textarea>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Published
+							</label>
+						</div>
+						<div class="form-group">
+							<label >Created:</label>
+							<input type="text" class="form-control" >
+						</div>
+						
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					  <button type="submit" class="btn main-color-bg">Save changes</button>
+					</form>
+					</div>
+				  </div>
+				</div>
+			</div>
+
+				 <!-- Add User -->
+		 
+		 <div class="modal fade user" id="addUser"  role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+			  <div class="modal-content">
+				  <form action="">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="exampleModalLongTitle">Add User</h5>
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label>Full Name:</label>
+						<input type="text" class="form-control" >
+					</div>
+				  <div class="form-group">
+					  <label>Email:</label>
+					  <input type="email" class="form-control">
+					</div>
+					<div class="checkbox">
+						<label>Date Joined:</label>
+						<input type="date" class="form-control" > 
+					</div>
+					
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				  <button type="submit" class="btn main-color-bg">Save changes</button>
+				</form>
+				</div>
+			  </div>
+			</div>
 
 </body>
 <script>
-	CKEDITOR.replace( 'editor1' );
+	CKEDITOR.replace( 'editor1');
+	CKEDITOR.replace( 'editor2');
 </script>
 <script src="main.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
