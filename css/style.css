@@ -180,6 +180,9 @@ body{
       padding-top: 5px;
       padding-bottom: 5px;
     }
+    .user-btn{
+      margin-bottom: 5px;
+    }
   }
   
   @media (max-width: 767px) {
@@ -212,7 +215,9 @@ body{
       .web-overview .card-body .list-inline .col-md-3{
         text-align: center;
       }
-  
+      .user-btn{
+        margin-bottom: 5px;
+      }
   }
   
   @media (max-width: 991px) {
@@ -226,6 +231,9 @@ body{
     .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
       color: #a58b72;
       background-color: #ff5921;
+    }
+    .user-btn{
+      margin-bottom: 5px;
     }
   }
   
