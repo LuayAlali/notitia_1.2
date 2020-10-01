@@ -97,6 +97,8 @@ body{
   #header .create{
       padding-top:20px;
   }
+  /* main */
+
 
 /* side Dashboard */
 .list-dash-item{
@@ -122,13 +124,18 @@ body{
   
 
 /* footer */
-
+body{
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
 #footer{
     background: #333333;
     color:white;
     text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+
+    width: 100%;
+   
+    bottom: 0;
 }
 
 
