@@ -3,6 +3,12 @@
 let deleteBtn = document.querySelectorAll('.delete');
 let filter = document.querySelector('.filter');
 let name = document.querySelectorAll('.name');
+const btn1 = document.getElementById('btn1');
+const btn2 = document.getElementById('btn2');
+const btn3 = document.getElementById('btn3');
+const page = document.getElementById('addPage')
+const user = document.getElementById('addUser');
+const post = document.getElementById('addPost');
 // Event Listener
 for(let i = 0; i < deleteBtn.length; i++){
 deleteBtn[i].addEventListener('click', () =>{
@@ -27,17 +33,4 @@ filter.addEventListener('keyup', () =>{
 
 
 
-// searchInput.addEventListener('keyup', () => {
-// 	for(let i = 0; i < images.length; i++ ){
-// 		let search = searchInput.value;
-// 		search = search.toLowerCase();
-// 		let caption = images[i].getAttribute('data-caption');
-// 	if(caption.toLowerCase().indexOf(search) > -1){
-// 		images[i].style.display = "";
-// 	}else {
-// 	images[i].style.display = 'none';
 
-// 	}
-// 	}
-
-// 	});
