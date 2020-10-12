@@ -102,7 +102,6 @@ body{
 
   #header .create{
       padding-top:20px;
-     
   }
   
   /* main */
@@ -188,6 +187,9 @@ body{
       padding-top: 5px;
       padding-bottom: 5px;
     }
+    .table td{
+      font-size:10px;
+    }
     .user-btn{
       margin-bottom: 5px;
     }
@@ -202,7 +204,7 @@ body{
   }
 
 
-  }
+
   
   @media (max-width: 767px) {
     .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
