@@ -190,9 +190,9 @@ body{
     .table td{
       font-size:10px;
     }
-    .user-btn{
+    /* .user-btn{
       margin-bottom: 5px;
-    }
+    } */
     .btn-danger{
       font-size:10px;
       padding: 0.4rem .5rem;
@@ -236,9 +236,9 @@ body{
       .web-overview .card-body .list-inline .col-md-3{
         text-align: center;
       }
-      .user-btn{
+      /* .user-btn{
         margin-bottom: 5px;
-      }
+      } */
   }
   
   @media (max-width: 991px) {
@@ -253,9 +253,9 @@ body{
       color: #a58b72;
       background-color: #ff5921;
     }
-    .user-btn{
+    /* .user-btn{
       margin-bottom: 5px;
-    }
+    } */
 
   }
   
